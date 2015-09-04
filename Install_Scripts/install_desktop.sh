@@ -9,7 +9,7 @@
 #*************************************************
 
 ######################################################################
-# 0. Comment out programs you don't want installed 
+# 0. Comment out programs you don't want installed
 # (note -y argument - DOES NOT PROMPT for approval)
 # 1. Run the script - sudo sh install_desktop.sh
 # 2. Enter sudo password
@@ -17,9 +17,14 @@
 # 4. Stuff is automagically installed! WOO HOO!
 ######################################################################
 
-# Add a few repos for stuff.
-#sudo apt-add-repository ppa:danielrichter2007/grub-customizer
+# Grub-customizer is awesome for changing Grub related stuff.
+# Sublime is also awesome and free. Just change one line and it won't bug you. (Google that)
+sudo apt-add-repository ppa:danielrichter2007/grub-customizer
 sudo apt-add-repository ppa:webupd8team/sublime-text-3
+
+# These are Ubuntu Unity specific. Comment out if you use Xubuntu / Arch / whatever.
+sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily
+sudo add-apt-repository ppa:tualatrix/ppa
 
 # This is for Chrome - it may not work (at least in Ubuntu 14.04 LTS in my experience)
 # in which case just install "chromimum-browser" or, manually install chrome
@@ -45,8 +50,11 @@ sudo apt-get -y install chromium-browser
 # Get python stuff.
 sudo apt-get -y install python python-gtk2 python-xlib python-dbus python-wnck
 
-# Development stuff
-sudo apt-get -y install git gedit g++ openjdk-6-jdk sublime-text-installer curl geany
+# Development stuff, Google things you don't recongize. All are handy.
+sudo apt-get -y install git gedit g++ openjdk-6-jdk sublime-text-installer curl geany terminator
+
+# Ubuntu Unity stuff! Don't install unless you run Ubuntu 14.04 or a version with Unity.
+sudo apt-get -y install  ubuntu-tweak unity-tweak-tool
 
 # System monitors - useful stuff for figuring out system performance.
 sudo apt-get -y install nmon glances htop
@@ -61,21 +69,21 @@ sudo apt-get -y install virtualbox
 sudo apt-get -y install wine
 
 # GRUB / Partion stuff (probably not needed in a VM)
-sudo apt-get -y install grub-customizer gparted unetbootin 
+sudo apt-get -y install grub-customizer gparted unetbootin
 
 # File transfer stuff
-sudo apt-get -y install filezilla rsync 
+sudo apt-get -y install filezilla rsync
 
 #  The fun stuff.
 sudo apt-get -y install steam gimp neverball teg pychess
 
 # Multimedia stuff / "sl"
-sudo apt-get -y install vlc shutter pinta sl
+sudo apt-get -y install vlc shutter pinta sl fortune-mod
 
 # Security stuff
-sudo apt-get -y install keepassx nmap wireshark 
+sudo apt-get -y install keepassx nmap wireshark
 
-# Office - note, this comes preinstalled in Ubuntu 14.04LTS, 
+# Office - note, this comes preinstalled in Ubuntu 14.04LTS,
 # so uncomment if using a different distro that doesn't provide LibreOffice
 #sudo apt-get -y install libreoffice
 
@@ -84,7 +92,7 @@ sudo apt-get -y install keepassx nmap wireshark
 
 # *************************************************************************
 # anything else you want can be added below by following the synax of:
-# sudo apt-get -y install PROGRAM_NAMES_HERE 
+# sudo apt-get -y install PROGRAM_NAMES_HERE
 #
 # add any required repositories to the top of this script though!
 #

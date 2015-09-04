@@ -73,7 +73,7 @@ sudo apt-get -y install filezilla rsync
 #sudo apt-get -y install steam gimp neverball teg pychess
 
 # Multimedia stuff / "sl"
-sudo apt-get -y install vlc shutter pinta sl
+sudo apt-get -y install vlc shutter pinta sl fortune-mod
 
 # Security stuff
 sudo apt-get -y install keepassx nmap wireshark 
