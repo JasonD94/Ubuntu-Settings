@@ -46,7 +46,7 @@ sudo apt-get -y install chromium-browser
 sudo apt-get -y install python python-gtk2 python-xlib python-dbus python-wnck
 
 # Development stuff
-sudo apt-get -y install git gedit g++ openjdk-6-jdk sublime-text-installer curl geany
+sudo apt-get -y install git gedit g++ openjdk-6-jdk sublime-text-installer curl geany terminator
 
 # System monitors - useful stuff for figuring out system performance.
 sudo apt-get -y install nmon glances htop
