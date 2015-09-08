@@ -78,12 +78,20 @@ sudo apt-get -y install vlc shutter pinta sl fortune-mod
 # Security stuff
 sudo apt-get -y install keepassx nmap wireshark 
 
-# Office - note, this comes preinstalled in Ubuntu 14.04LTS, 
-# so uncomment if using a different distro that doesn't provide LibreOffice
-#sudo apt-get -y install libreoffice
+# *************************************************************************
+# * Configure stuff.
+# *************************************************************************
+# Copy shutter profile into .config / whatever
+#scp ~/Code/Ubuntu-Settings/Shutter_Profiles/.shutter 
 
-# Screensaver for Xubuntu - may still work in Ubuntu? Needs testing.
-# sudo apt-get -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
+# Copy Sublime settings into the right spot.
+#scp 
+
+# Copy Templates into the right spot.
+#scp
+
+# Copy the BashRC settings over.
+#scp
 
 # *************************************************************************
 # anything else you want can be added below by following the synax of:
