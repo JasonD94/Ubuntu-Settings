@@ -17,7 +17,7 @@ alias l.='ls -d .* --color=auto'
 # get rid of command not found
 alias cd..='cd ..'
 
-## a quick way to get out of current directory
+# a quick way to get out of current directory
 alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
