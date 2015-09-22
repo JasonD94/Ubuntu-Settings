@@ -35,6 +35,9 @@ alias p="git push origin"
 alias pu="git pull origin"
 alias s="git status"
 
+# Python SimpleHTTP Server
+alias pserv="python -m SimpleHTTPServer"
+
 # Misc found on the internet
 alias diskspace="du -S | sort -n -r |more"
 alias folders="find . -maxdepth 1 -type d -print | xargs du -sk | sort -rn"
