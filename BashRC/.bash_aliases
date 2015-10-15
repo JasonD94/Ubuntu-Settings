@@ -36,7 +36,7 @@ alias pu="git pull origin"
 alias s="git status"
 
 # Python SimpleHTTP Server
-alias pserv="python -m SimpleHTTPServer"
+alias pserver="python -m SimpleHTTPServer"
 
 # Misc found on the internet
 alias diskspace="du -S | sort -n -r |more"
