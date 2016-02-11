@@ -16,18 +16,24 @@
 #   issue and I'll tweak the scripts.
 ################################################################################
 
+# Step 0: I'm assuming I haven't done ANYTHING with this OS yet, so let's
+# update, upgrade and dist-upgrade to get stuff up and running.
+echo 'THIS SCRIPT WILL UPDATE, UPGRADE AND DIST-UPGRADE THE SYSTEM.'
+echo 'IT WILL THEN INSTALL A TON OF PROGRAMS AND CONFIGURE STUFF.'
+echo 'Enter your sudo password and let the script do its magic.'
+echo 'If you DO NOT want to run this script anymore, hit CTR+C right now.'
+sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade
+
 # Step 1: Run the install script.
 # I default to desktop.sh, but you may want to try the VM script for VMs or
 # lightweight computers (e.g. VMs, Chromebooks, Netbooks, 2 in 1s, etc.)
 echo 'Running the install script...'
 sh ./Install_Scripts/install_desktop.sh
 
-##############################################
-# TODO:
-# 1) Add some stuff to copy configs over.
-# 2) Make sublime the default text editor
-# 3) Make Chrome the default browser
-# 4) Some other stuff.
-#
-###############################################
+# Step 2: Setup the defaults / configs that work best.
+# This makes getting up and running so easy.
+echo 'Running the Configure script...'
+sh ./Configure/configure.sh
 
+# Anything else needed?
+# TODO: determine other stuff to do.

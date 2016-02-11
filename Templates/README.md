@@ -1,0 +1,1 @@
+These files will end up in Ubuntu's Template menu.
