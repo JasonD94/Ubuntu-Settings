@@ -36,6 +36,8 @@ sudo add-apt-repository ppa:atareao/atareao -y
 sudo add-apt-repository ppa:diesch/testing -y
 sudo add-apt-repository ppa:caffeine-developers/caffeine-dev -y
 sudo add-apt-repository ppa:indicator-brightness/ppa -y
+sudo add-apt-repository ppa:alexmurray/indicator-sensors-daily -y
+sudo add-apt-repository ppa:tsbarnes/indicator-keylock -y
 
 # This is for Chrome - it may not work (at least in Ubuntu 14.04 LTS in my experience)
 # in which case just install "chromimum-browser" or, manually install chrome
@@ -76,7 +78,7 @@ sudo apt-get -y install nmon glances htop
 # https://askubuntu.com/questions/30334/what-application-indicators-are-available
 sudo apt-get -y install indicator-multiload indicator-cpufreq classicmenu-indicator
 sudo apt-get -y install my-weather-indicator indicator-sensors caffeine shutter
-sudo apt-get -y install indicator-brightness
+sudo apt-get -y install indicator-brightness indicator-keylock
 
 # Sensor related stuff - check on CPU/GPU/HDD temps, as well as HDD performance (Gsmart)
 sudo apt-get -y install lm-sensors hddtemp gsmartcontrol
