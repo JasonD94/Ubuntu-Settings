@@ -42,8 +42,8 @@ sudo add-apt-repository ppa:tsbarnes/indicator-keylock -y
 # This is for Chrome - it may not work (at least in Ubuntu 14.04 LTS in my experience)
 # in which case just install "chromimum-browser" or, manually install chrome
 # from Google
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 # Update the repositories
 sudo apt-get -y update
@@ -53,7 +53,7 @@ sudo update-locale LC_COLLATE=C
 
 # Chrome - if the above "wget" line didn't work this may fail.
 # Make sure to uncomment that line as well!
-sudo apt-get -y install google-chrome-stable
+#sudo apt-get -y install google-chrome-stable
 
 # If you instead want the open source version of Chrome, Chromium, use this.
 # (uncomment the "install chromium-browser" line)
@@ -64,7 +64,7 @@ sudo apt-get -y install chromium-browser
 sudo apt-get -y install python python-gtk2 python-xlib python-dbus python-wnck
 
 # Development stuff, Google things you don't recongize. All are handy.
-sudo apt-get -y install git gedit g++ openjdk-6-jdk sublime-text-installer curl geany terminator
+sudo apt-get -y install git gedit g++ sublime-text-installer curl geany terminator
 
 # Ubuntu Unity stuff! Don't install unless you run Ubuntu 14.04 or a version with Unity.
 sudo apt-get -y install  ubuntu-tweak unity-tweak-tool
@@ -77,7 +77,7 @@ sudo apt-get -y install nmon glances htop
 # I found all of these on Stackoverflow, see the following URL for a description:
 # https://askubuntu.com/questions/30334/what-application-indicators-are-available
 sudo apt-get -y install indicator-multiload indicator-cpufreq classicmenu-indicator
-sudo apt-get -y install my-weather-indicator indicator-sensors caffeine shutter
+sudo apt-get -y install my-weather-indicator caffeine shutter
 sudo apt-get -y install indicator-brightness indicator-keylock
 
 # Sensor related stuff - check on CPU/GPU/HDD temps, as well as HDD performance (Gsmart)
