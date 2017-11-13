@@ -11,7 +11,7 @@ sh ./auto_install.sh
 
 It will prompt for your password, and then set stuff up.
 
-##WARNINGS
+## WARNINGS
 This will set stuff up the way I like it. You may hate it, or like it, or want
 to change things.
 
